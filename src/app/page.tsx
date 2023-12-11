@@ -5,6 +5,7 @@ import { Article } from '@/components/HomeCompoents/Articles'
 import { Photos } from '@/components/HomeCompoents/HeroPhotos'
 import { SocialLink } from '@/components/HomeCompoents/SocialLink'
 import { Resume } from '@/components/HomeCompoents/Resume'
+import { Analytics } from '@vercel/analytics/react'
 
 export default async function Home() {
   let articles = (await getAllArticles()).slice(0, 4)
@@ -50,6 +51,8 @@ export default async function Home() {
           </div>
         </div>
       </Container>
+
+      <Analytics />
     </>
   )
 }
