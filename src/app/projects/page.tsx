@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 }
 
 export default async function Projects() {
-  const projects = await useGetProjects()
+  // const projects = await useGetProjects()
 
   return (
     <SimpleLayout
@@ -20,12 +20,12 @@ export default async function Projects() {
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {projects &&
+        {/* {projects &&
           projects.map((project, i) => {
             if (project.stargazers_count > 3 && project.language !== 'C') {
               return <ProjectCard project={project} />
             }
-          })}
+          })} */}
       </ul>
     </SimpleLayout>
   )
