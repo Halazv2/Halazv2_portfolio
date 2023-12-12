@@ -1,7 +1,7 @@
 import { type Metadata } from 'next'
 import { SimpleLayout } from '@/components/SimpleLayout'
 import ProjectCard from '@/components/ProjectCard'
-import { useGetProjects } from '@/hooks/useGetProjects'
+import { GitHubProject } from '@/types/interfaces'
 
 export const metadata: Metadata = {
   title: 'Projects',
@@ -9,7 +9,9 @@ export const metadata: Metadata = {
 }
 
 export default async function Projects() {
-  // const projects = await useGetProjects()
+  const res = await fetch('https://api.github.com/users/halazv2/repos')
+  if (!res.ok) throw new Error('Failed to fetch data')
+  const projects: GitHubProject[] = await res.json()
 
   return (
     <SimpleLayout
@@ -20,12 +22,12 @@ export default async function Projects() {
         role="list"
         className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
       >
-        {/* {projects &&
+        {projects &&
           projects.map((project, i) => {
             if (project.stargazers_count > 3 && project.language !== 'C') {
-              return <ProjectCard project={project} />
+              return <ProjectCard key={i} project={project} />
             }
-          })} */}
+          })}
       </ul>
     </SimpleLayout>
   )
