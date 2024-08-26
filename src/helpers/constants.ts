@@ -1,6 +1,7 @@
 import { Role, languageIconProps } from '@/types/interfaces'
 import {
   logoAyouris,
+  logoAznay,
   logoMysestAi,
   logoV12software,
   logoYoucode,
@@ -14,14 +15,21 @@ import {
 
 export const resume: Array<Role> = [
   {
-    company: 'V12Software',
-    title: 'Full Stack Developer',
-    logo: logoV12software,
-    start: 'Aug 2023',
+    company: 'Aznay Technologies',
+    title: 'Frontend Engineer',
+    logo: logoAznay,
+    start: 'Apr 2024',
     end: {
       label: 'Present',
       dateTime: new Date().getFullYear().toString(),
     },
+  },
+  {
+    company: 'V12Software',
+    title: 'Full Stack Developer',
+    logo: logoV12software,
+    start: 'Aug 2023',
+    end: 'Feb 2024',
   },
   {
     company: 'MyRestai Europe',
@@ -53,4 +61,3 @@ export const languageIcons: languageIconProps = {
   Keycloak: Keycloak,
   HTML: Keycloak,
 }
-
