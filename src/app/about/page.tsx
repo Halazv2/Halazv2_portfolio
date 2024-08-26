@@ -81,7 +81,7 @@ export default function About() {
               second year, I specialized in the MERN stack, refining my
               full-stack skills, and worked at
               <span className="low-highlight ml-1 px-1">MyRestai Europe</span>,
-              a startup in Marrakech focused on French real estate.
+              a French startup in Marrakech focused on real estate.
             </p>
             <p>
               I then joined
