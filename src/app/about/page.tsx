@@ -68,9 +68,6 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              {/* I transitioned from a background in biology to pursue a career in
-              development, undergoing a comprehensive two-year program at
-              &quot;YouCode&quot;, a coding school in Safi, Morocco. */}
               I transitioned from a background in biology to web development,
               completing a two-year program at
               <span className="low-highlight mx-1 px-1">YouCode</span>
