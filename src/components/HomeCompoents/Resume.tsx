@@ -17,6 +17,7 @@ export function Resume() {
       </ol>
       <Button
         href={process.env.RESUME_LINK}
+        target="_blank"
         variant="secondary"
         className="group mt-6 w-full"
       >
