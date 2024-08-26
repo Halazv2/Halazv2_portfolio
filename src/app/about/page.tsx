@@ -44,8 +44,7 @@ function MailIcon(props: React.ComponentPropsWithoutRef<'svg'>) {
 
 export const metadata: Metadata = {
   title: 'About',
-  description:
-    'I’m Hala Ziani. Full Stack Developer & UI/UX designer.',
+  description: 'I’m Hala Ziani. Full Stack Developer & UI/UX designer.',
 }
 
 export default function About() {
@@ -69,30 +68,32 @@ export default function About() {
           </h1>
           <div className="mt-6 space-y-7 text-base text-zinc-600 dark:text-zinc-400">
             <p>
-              I transitioned from a background in biology to pursue a career in
+              {/* I transitioned from a background in biology to pursue a career in
               development, undergoing a comprehensive two-year program at
-              &quot;YouCode&quot;, a coding school in Safi, Morocco.
+              &quot;YouCode&quot;, a coding school in Safi, Morocco. */}
+              I transitioned from a background in biology to web development,
+              completing a two-year program at
+              <span className="low-highlight mx-1 px-1">YouCode</span>
+              in Safi, Morocco.
             </p>
             <p>
-              In the initial year, I gained proficiency in fundamental
-              programming concepts and web development technologies, including
-              HTML, CSS, JavaScript, PHP, MySQL, and various frameworks. During
-              this period, I secured an internship at &quot;Ayouris&quot;, a
-              software company in Rabat, Morocco, where I contributed to a
-              project utilizing NextJs and TypeScript.
+              During my first year, I gained expertise in HTML, CSS, JavaScript,
+              PHP, MySQL, and frameworks, and interned at
+              <span className="low-highlight mx-1 px-1">Ayouris</span>
+              in Rabat, contributing to a Next.js and TypeScript project. In my
+              second year, I specialized in the MERN stack, refining my
+              full-stack skills, and worked at
+              <span className="low-highlight ml-1 px-1">MyRestai Europe</span>,
+              a startup in Marrakech focused on French real estate.
             </p>
             <p>
-              Building on this foundation, my second year at YouCode focused on
-              specializing in the MERN stack (MongoDB, Express, React, Node.js)
-              and mastering full-stack application development. I further
-              applied my skills during a role at &quot;MyRestai Europe&quot;, a
-              startup in Marrakech, Morocco, specializing in French real estate.
-            </p>
-            <p>
-              Currently, I am a Full Stack Web Developer at
-              &quot;V12Software&quot;, an American company with a presence in
-              Morocco. In this role, I contribute to the development of a
-              platform that facilitates vehicle sales for agencies.
+              I then joined
+              <span className="low-highlight ml-1 px-1">V12Software</span>, an
+              American company, where I helped develop a platform for car
+              dealerships. Currently, I&apos;m a Frontend Engineer at{' '}
+              <span className="low-highlight mx-1 px-1">
+                Aznay Technologies
+              </span>
             </p>
           </div>
         </div>
@@ -103,14 +104,14 @@ export default function About() {
               icon={GitHubIcon}
               className="mt-4"
             >
-              Follow on GitHub
+              View my GitHub
             </SocialLink>
             <SocialLink
               href="https://www.linkedin.com/in/halaz"
               icon={LinkedInIcon}
               className="mt-4"
             >
-              Follow on LinkedIn
+              Connect on LinkedIn
             </SocialLink>
             <SocialLink
               href="mailto:contact.halaziai@gmail.com"
